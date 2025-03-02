@@ -767,15 +767,11 @@ button:focus {
   border: none;
 }
 
-.checkbox-container
-  input:checked
-  + .label-checkbox
-  .custom-checkbox
-  .check-icon {
+.checkbox-container input:checked + .label-checkbox .check-icon {
   fill: #f4f4fd;
 }
 
-.label-checkbox p {
+.label-checkbox {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
