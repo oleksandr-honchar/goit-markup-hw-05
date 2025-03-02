@@ -725,7 +725,6 @@ button:focus {
 }
 
 .label-checkbox {
-  display: inline-flex;
   align-items: center;
   vertical-align: middle;
   box-sizing: border-box;
