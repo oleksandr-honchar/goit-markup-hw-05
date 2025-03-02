@@ -511,9 +511,6 @@ button:focus {
   justify-content: space-between;
   width: 100%;
   gap: 24px;
-}
-
-.form-input-cont {
   position: relative;
 }
 
@@ -767,7 +764,7 @@ button:focus {
 
 .checkbox-container input:checked + .label-checkbox .custom-checkbox {
   background-color: #404bbf;
-  border: 1px solid #404bbf;
+  border: none;
 }
 
 .checkbox-container
@@ -775,12 +772,6 @@ button:focus {
   + .label-checkbox
   .custom-checkbox
   .check-icon {
-  fill: #f4f4fd;
-}
-
-.input:checked + .custom-checkbox {
-  background-color: #404bbf;
-  border: none;
   fill: #f4f4fd;
 }
 
