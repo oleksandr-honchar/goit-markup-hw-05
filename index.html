@@ -464,35 +464,31 @@
         </div>
         <div class="footer-subscribe">
           <p class="subscribe-title">Subscribe</p>
-          <div class="subscribe-list">
-            <form class="form" name="subscribe_form" autocomplete="off">
-              <div class="form-input-cont">
-                <label class="form-label" for="user-email"></label>
-                <input
-                  class="form-input"
-                  type="email"
-                  id="user-email"
-                  name="usermail"
-                  autofocus
-                  placeholder="E-mail"
-                />
-              </div>
-            </form>
-
-            <button class="subscribe-btn" type="button">
+          <form class="form" name="subscribe_form" autocomplete="off">
+            <div class="form-input-cont">
+              <label class="form-label" for="usermail"></label>
+              <input
+                class="form-input"
+                type="email"
+                id="usermail"
+                name="usermail"
+                placeholder="E-mail"
+              />
+            </div>
+            <button class="subscribe-btn" type="submit">
               Subscribe
-              <svg class="social-list-icon" width="24" height="24">
+              <svg class="subscribe-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-telegram"></use>
               </svg>
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </footer>
 
     <!-- REGION BACKDROP -->
 
-    <div class="backdrop is-open" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button class="close-btn" type="button" data-modal-close>
           <svg class="close-btn-icon" width="8" height="8">
@@ -501,7 +497,7 @@
         </button>
         <p class="modal-text">Leave your contacts and we will call you back</p>
         <form class="modal-form">
-          <div class="modal-container-block">
+          <div class="modal-container">
             <label class="modal-form-label" for="user-name">Name</label>
             <div class="modal-form-input-cont">
               <input
@@ -509,7 +505,7 @@
                 required
                 type="text"
                 id="user-name"
-                name="username"
+                name="user-name"
               />
               <svg class="modal-form-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-person"></use>
@@ -517,7 +513,7 @@
             </div>
           </div>
 
-          <div class="input-container">
+          <div class="modal-container">
             <label class="modal-form-label" for="user-phone">Phone</label>
             <div class="modal-form-input-cont">
               <input
@@ -532,7 +528,7 @@
             </div>
           </div>
 
-          <div class="input-container">
+          <div class="modal-container">
             <label class="modal-form-label" for="useremail">Email</label>
             <div class="modal-form-input-cont">
               <input
@@ -549,30 +545,34 @@
 
           <div class="input-container">
             <label class="modal-form-label" for="user-comment">Comment</label>
-            <div class="modal-form-input-cont">
-              <textarea
-                class="modal-form-input text-area"
-                name="comment"
-                rows="5"
-                placeholder="Text input"
-                id="user-comment"
-                name="comment"
-              ></textarea>
-            </div>
+            <textarea
+              class="modal-form-input text-area"
+              name="user-comment"
+              rows="5"
+              placeholder="Text input"
+              id="user-comment"
+            >
+            </textarea>
           </div>
 
           <div class="checkbox-container">
-            <input type="checkbox" id="checkbox" name="checkbox" />
-            <label class="label-checkbox" for="checkbox">
+            <input
+              class="checkbox visually-hidden"
+              type="checkbox"
+              id="user-privacy"
+              name="checkbox"
+              value="true"
+            />
+            <label class="label-checkbox" for="user-privacy">
               <span class="custom-checkbox">
                 <svg class="check-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
-              <p>I accept the terms and conditions of the</p>
-              <a class="accept-terms-link" href="./index.html"
-                >Privacy Policy</a
-              >
+              I accept the terms and conditions of the
+              <a class="accept-terms link" href="./index.html"
+                >Privacy Policy
+              </a>
             </label>
           </div>
 
